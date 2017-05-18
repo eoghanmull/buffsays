@@ -8,11 +8,12 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { InfoModal } from '../pages/modal/modal';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    InfoModal
   ],
   imports: [
     BrowserModule,
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    InfoModal
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,21 @@
+
+<ion-content padding>
+    <ion-card>
+      <ion-card-header>
+        <h1> App info </h1>
+      </ion-card-header>
+
+      <ion-item>
+        <h2> Developed by </h2>
+        <br>
+        <ion-list>
+           <ion-item style="color:black;" *ngFor="let name of contributors">{{name}}</ion-item>
+        </ion-list>
+      </ion-item>
+
+      <ion-item>
+      <button id="close" ion-button style="float:right;" (click)="dismiss()">Close</button>
+      </ion-item>
+
+    </ion-card>
+</ion-content>
