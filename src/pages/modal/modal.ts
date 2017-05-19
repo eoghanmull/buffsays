@@ -13,8 +13,10 @@ export class InfoModal {
 
     }
     public contributors = [
-            'Eoghan Mulcahy',
-            'Ciarán O\'Mara'
+            'Eoghan Mulcahy', 
+            'E-mail - eoghanm56@gmail.com',
+            'Ciarán O\'Mara',
+            'E-mail - ciaranahane@gmail.com'
         ];
 
     dismiss(){
