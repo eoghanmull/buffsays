@@ -23,11 +23,11 @@ export class MyApp {
       let audio = {
         hail: {
           id: '1',
-          path: '',
+          path: 'assets/audio/hail_hail1.mp3',
         },
-        drink: {
+        soak: {
           id: '2',
-          path: 'assets/audio/drink_it_in_mammies.mp3',
+          path: 'assets/audio/soak_it_in_man1.mp3',
         },
         nah: {
           id: '3',
@@ -35,32 +35,35 @@ export class MyApp {
         },
         capiche: {
           id: '4',
-          path: '',
+          path: 'assets/audio/capiche1.mp3',
         },
         fact: {
           id: '5',
           path: 'assets/audio/fact_of_life.mp3',
         },
-        deletion: {
+        deplorable: {
           id: '6',
-          path: '',
+          path: 'assets/audio/deplorable1.mp3',
         },
         schucky: {
           id: '7',
-          path: '',
+          path: 'assets/audio/schucky_ducky1.mp3',
         },
-        tantalising: {
+        untold: {
           id: '8',
-          path: '',
+          path: 'assets/audio/doing_untold1.mp3',
         }
       };
 
       // preload audio files
-      nativeAudio.preloadSimple(audio.nah.id, audio.nah.path).then((data)=>{
-        console.log("LOADED");
-        console.log(data);  
-      });
-
+      nativeAudio.preloadSimple(audio.nah.id, audio.nah.path);
+      nativeAudio.preloadSimple(audio.fact.id, audio.fact.path);
+      nativeAudio.preloadSimple(audio.soak.id, audio.soak.path);
+      nativeAudio.preloadSimple(audio.hail.id, audio.hail.path);
+      nativeAudio.preloadSimple(audio.capiche.id, audio.capiche.path);
+      nativeAudio.preloadSimple(audio.deplorable.id, audio.deplorable.path);
+      nativeAudio.preloadSimple(audio.schucky.id, audio.schucky.path);
+      nativeAudio.preloadSimple(audio.untold.id, audio.untold.path);
     });
   }
 }
