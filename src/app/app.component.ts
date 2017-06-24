@@ -54,7 +54,6 @@ export class MyApp {
           path: 'assets/audio/doing_untold1.mp3',
         }
       };
-
       // preload audio files
       nativeAudio.preloadSimple(audio.nah.id, audio.nah.path);
       nativeAudio.preloadSimple(audio.fact.id, audio.fact.path);
