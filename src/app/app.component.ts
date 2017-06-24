@@ -25,9 +25,9 @@ export class MyApp {
           id: '1',
           path: 'assets/audio/hail_hail1.mp3',
         },
-        soak: {
+        drink: {
           id: '2',
-          path: 'assets/audio/soak_it_in_man1.mp3',
+          path: 'assets/audio/drink_it_in_maan1.mp3',
         },
         nah: {
           id: '3',
@@ -58,7 +58,7 @@ export class MyApp {
       // preload audio files
       nativeAudio.preloadSimple(audio.nah.id, audio.nah.path);
       nativeAudio.preloadSimple(audio.fact.id, audio.fact.path);
-      nativeAudio.preloadSimple(audio.soak.id, audio.soak.path);
+      nativeAudio.preloadSimple(audio.drink.id, audio.drink.path);
       nativeAudio.preloadSimple(audio.hail.id, audio.hail.path);
       nativeAudio.preloadSimple(audio.capiche.id, audio.capiche.path);
       nativeAudio.preloadSimple(audio.deplorable.id, audio.deplorable.path);
